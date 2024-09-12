@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astroid Developers</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('...-x.ttf') format('truetype'); /* Custom font for animation */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        /* Animated text paragraph */
+        .animated-text {
+            font-family: 'CustomFont', sans-serif;
+            font-size: 2.5em;
+            color: #add8e6;
+            margin-top: 50px;
+        }
+
+        .animated-text span {
+            display: inline-block;
+            animation: colorAnimation 2s infinite alternate;
+        }
+
+        /* Animation for each letter with delays */
+        @keyframes colorAnimation {
+            0% {
+                color: #add8e6; /* Light Blue */
+            }
+            100% {
+                color: #800080; /* Purple */
+            }
+        }
+
+        /* Timed delays for each letter */
+        .animated-text span:nth-child(1) { animation-delay: 0s; }
+        .animated-text span:nth-child(2) { animation-delay: 0.1s; }
+        .animated-text span:nth-child(3) { animation-delay: 0.2s; }
+        .animated-text span:nth-child(4) { animation-delay: 0.3s; }
+        .animated-text span:nth-child(5) { animation-delay: 0.4s; }
+        .animated-text span:nth-child(6) { animation-delay: 0.5s; }
+        .animated-text span:nth-child(7) { animation-delay: 0.6s; }
+        .animated-text span:nth-child(8) { animation-delay: 0.7s; }
+        .animated-text span:nth-child(9) { animation-delay: 0.8s; }
+
+        /* Developer box container */
+        .dev-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 50px 0;
+        }
+
+        /* Glowing box styles */
+        .dev-box {
+            background-color: #111;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(173, 216, 230, 0.8), 0 0 15px rgba(128, 0, 128, 0.8);
+            padding: 20px;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .dev-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(173, 216, 230, 1), 0 0 30px rgba(128, 0, 128, 1);
+        }
+
+        .dev-box img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .dev-box h2 {
+            margin: 15px 0 10px 0;
+            font-size: 1.5em;
+            color: #add8e6;
+        }
+
+        .dev-box p {
+            font-size: 1em;
+            color: #ddd;
+        }
+
+        /* Copyright at the bottom */
+        .copyright {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .dev-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Text Paragraph -->
+    <div class="animated-text">
+        <span>A</span><span>s</span><span>²</span>
+
+    <!-- Developer Boxes -->
+    <div class="dev-container">
+        <!-- Developer 1 -->
+        <div class="dev-box">
+            <img src="images/MainDev.png" alt="Developer 1">
+            <h2>nnOuter</h2>
+            <p>nnOuter is the lead developer of Astroid, specializing in themes, and more.</p>
+        </div>
+
+        <!-- Developer 2 -->
+        <div class="dev-box">
+            <img src="images/Dev2.png" alt="Developer 2">
+            <h2>sevenv1</h2>
+            <p>Sevenv1 is the frontend designer, crafting the beautiful interface and user experience for Astroid.</p>
+        </div>
+
+        <!-- Developer 3 -->
+        <div class="dev-box">
+            <img src="images/Me.gif" alt="Developer 3">
+            <h2>Lucid</h2>
+            <p>LucidGhost focused on the site development</p>
+        </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        © 2024 Astroid Solutions. All rights reserved.
+    </div>
+</body>
+</html>

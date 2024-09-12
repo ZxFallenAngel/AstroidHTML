@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astroid Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(173, 216, 230, 0.8), 0 0 20px rgba(128, 0, 128, 0.8);
+        }
+
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(90deg, #add8e6, #800080);
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgba(173, 216, 230, 0.8), 0 0 20px rgba(128, 0, 128, 0.8);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            box-shadow: 0 0 40px rgba(173, 216, 230, 1), 0 0 40px rgba(128, 0, 128, 1);
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media only screen and (max-width: 600px) {
+            video {
+                width: 90%; /* Adjusts the video size for mobile */
+            }
+
+            .content p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video in place of the image, centered above the buttons -->
+    <div class="video-container">
+        <video controls>
+            <source src="pages/images/showcase.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Paragraph in the center describing the site -->
+    <div class="content">
+        <p>Welcome to Astroid Solutions! We provide nice themes for Astroid and innovative tools to enhance your workflow and experience. Click below to download our latest software or join our Discord community for more details.</p>
+        <a href="pages/File/As.zip" class="button" download>Download Astroid Solutions</a>
+        <a href="https://discord.gg/HU7d4NcMWG" class="button">Join Discord</a>
+    </div>
+    
+    <a href="pages/about.html" class="button">‐-----‐-------About Us-------------</a>
+    </div>
+    
+    <!-- Copyright statement at the bottom -->
+    <div class="copyright">
+        © 2024 Astroid Solutions. All rights reserved.
+    </div>
+</body>
+</html>
